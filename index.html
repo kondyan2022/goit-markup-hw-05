@@ -33,7 +33,9 @@
           >
           <ul class="header-menu list">
             <li class="header-menu-item">
-              <a class="header-menu-item-link link" href="./index.html"
+              <a
+                class="header-menu-item-link link active-page"
+                href="./index.html"
                 >Studio</a
               >
             </li>
@@ -70,7 +72,9 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button-order" type="button">Order Service</button>
+          <button data-modal-open class="button-order" type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- advences -->
@@ -584,5 +588,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-button">
+          <svg class="close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
